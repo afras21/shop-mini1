@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backclr"
+    tools:context=".LoginScreen"
+    >
+
+    <EditText
+        android:id="@+id/GetUser"
+        android:layout_width="331dp"
+
+        android:layout_height="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="281dp"
+        android:background="@android:color/background_light"
+        android:fontFamily="monospace"
+        android:hint=" Username"
+        android:inputType="textPersonName"
+        android:textColor="#000"
+        android:textColorHint="#c4c2c2"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/GetPwd"
+        android:layout_width="333dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="215dp"
+        android:background="@android:color/background_light"
+        android:fontFamily="monospace"
+        android:hint=" Password"
+        android:inputType="textPassword"
+        android:textColor="#000"
+        android:textColorHint="#c4c2c2"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/LoginButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="112dp"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginBottom="143dp"
+        android:background="@drawable/button"
+        android:fontFamily="monospace"
+        android:onClick="LClick"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+
+</RelativeLayout>

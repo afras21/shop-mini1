@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".newpro"
+    android:orientation="vertical"
+    android:background="#fff"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/backclr">
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/arrow"
+            android:onClick="Lgout" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="sans-serif"
+        android:text="Add Product"
+        android:textColor="#262626"
+        android:textSize="40dp" />
+
+    <EditText
+        android:id="@+id/getProId"
+        android:layout_width="372dp"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="20dp"
+        android:background="#d2d2d2"
+        android:hint="  Product Name"
+        android:textColor="#000"
+        android:textColorHint="#707070" />
+
+    <EditText
+        android:id="@+id/getPriceId"
+        android:layout_width="373dp"
+        android:layout_height="51dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="264dp"
+        android:layout_marginEnd="19dp"
+        android:background="#d2d2d2"
+        android:hint="  Price"
+        android:textColor="#000"
+        android:textColorHint="#707070" />
+
+    <Button
+        style="@style/Base.TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/getPriceId"
+        android:layout_alignStart="@+id/getPriceId"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="120dp"
+        android:background="@drawable/buttonadd"
+        android:fontFamily="monospace"
+        android:onClick="addClick"
+        android:text="Add"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/toastBtn"
+        android:layout_width="252dp"
+        android:layout_height="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="84dp"
+        android:background="#000"
+        android:clickable="false"
+        android:fontFamily="monospace"
+        android:text="Added Successfully"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+
+
+
+</RelativeLayout>
